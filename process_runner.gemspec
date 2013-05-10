@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = ProcessRunner::VERSION
   spec.authors       = ["Dustin Morrill"]
   spec.email         = ["dmorrill10@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Extremely tiny Ruby gem to asynchronously start independent processes.}
+  spec.summary       = %q{Extremely tiny Ruby gem to asynchronously start independent processes.}
+  spec.homepage      = "https://github.com/dmorrill10/process_runner"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
