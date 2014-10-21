@@ -11,8 +11,6 @@ module ProcessRunner
   def self.go(command, options={})
     dirname = File.dirname(command.first)
     options.merge!(:chdir => dirname) if options[:chdir].nil? && dirname && !dirname.empty?
-    pid = Process.spawn(command.join(' '), options)
-    Process.detach(pid)
-    pid
+    Process.detach(Process.spawn(*command, options)).pid
   end
 end
